@@ -1,12 +1,14 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
+from pydantic import BaseModel
+from typing import Optional, Dict
+
 class Student(BaseModel):
-    id: int
     full_name: str
     class_name: str
     teacher: str
-    contacts: dict
+    contacts: Optional[Dict] = None  # можно заменить на Optional[str], если будет просто строка
 
 class Project(BaseModel):
     id: int

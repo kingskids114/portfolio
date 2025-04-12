@@ -1,5 +1,11 @@
 const Projects = () => {
-    return <h1>Ошибка 404: Страница не найдена</h1>;
+    return <section>
+      <div className="container">
+        <div className="projects__wrap">
+          
+        </div>
+      </div>
+    </section>;
   };
   
   export default Projects;
